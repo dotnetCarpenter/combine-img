@@ -1,0 +1,19 @@
+{
+  "name": "combine-img",
+  "desciption": "Combine images into pages of 2 images",
+  "version": "1.0.0-beta.1",
+  "main": "index.mjs",
+  "scripts": {
+    "start": "node --experimental-modules index.mjs",
+    "test": "npm run test:run && npm run test:check && npm run test:cleanup",
+    "test:run": "node --experimental-modules index.mjs test/",
+    "test:check": "sha1sum -c test/sha1sum.txt",
+    "test:cleanup": "rm test/page*"
+  },
+  "dependencies": {
+    "ramda": "^0.27.0",
+    "yargs": "^15.1.0"
+  },
+  "type": "module",
+  "license": "GPL-3.0-or-later"
+}
