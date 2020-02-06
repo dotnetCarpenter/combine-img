@@ -1,7 +1,8 @@
-# combine-img [![Node.js CI](https://github.com/dotnetCarpenter/combine-img/workflows/Node.js%20CI/badge.svg)][1]
+[![Node.js CI](https://github.com/dotnetCarpenter/combine-img/workflows/Node.js%20CI/badge.svg)][1]
+
+# combine-img
 
 Combine images into pages of 2 images
-
 
 Depends on [ImageMagick](https://imagemagick.org/) and runs in Node.js 12+.
 
@@ -20,7 +21,7 @@ Options:
   -t, --type                                                    [default: "jpg"]
 ```
 
-_Note: Only meant to be used for a single user. Do not use this as a web service._
+_Note: Only meant to be used by a single user. Do not use this as a web service._
 
 License: [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later.html)
 
