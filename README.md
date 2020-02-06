@@ -8,9 +8,15 @@ Depends on [ImageMagick](https://imagemagick.org/).
 Usage:
   node --experimental-modules index.mjs [-t|--type FILE_EXTENSION] PATH
 
-  FILE_EXTENSION: Default is jpg but you can specify anything that ImageMagick supports.
+  FILE_EXTENSION: Default is jpg but you can specify anything that ImageMagick
+  support.
 
   PATH: The path to the folder which contains your images.
+
+Options:
+  --help      Show help                                                [boolean]
+  --version   Show version number                                      [boolean]
+  -t, --type                                                    [default: "jpg"]
 ```
 
 _Note: Only meant to be used for a single user. Do not use this as a web service._

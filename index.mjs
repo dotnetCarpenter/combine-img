@@ -65,7 +65,17 @@ function groupPairs (f, c = 0) {
 
 function parseArguments () {
   const argv = yargs
+    .usage(
+`Usage:
+  node --experimental-modules $0 [-t|--type FILE_EXTENSION] PATH
+
+  FILE_EXTENSION: Default is jpg but you can specify anything that ImageMagick support.
+
+  PATH: The path to the folder which contains your images.`)
     .alias('t', 'type')
+    .default('t', 'jpg')
+    .demandCommand(1)
+    .version()
     .argv
 
   return {
