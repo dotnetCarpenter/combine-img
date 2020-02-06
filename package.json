@@ -16,7 +16,7 @@
   },
   "type": "module",
   "license": "GPL-3.0-or-later",
-  "homepage": "https://github.com/dotnetCarpenter/combine-img",
+  "homepage": "https://github.com/dotnetCarpenter/combine-img#readme",
   "bugs": {
     "url": "https://github.com/dotnetCarpenter/combine-img/issues"
   }
