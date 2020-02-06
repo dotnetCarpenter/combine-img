@@ -15,5 +15,9 @@
     "yargs": "^15.1.0"
   },
   "type": "module",
-  "license": "GPL-3.0-or-later"
+  "license": "GPL-3.0-or-later",
+  "homepage": "https://github.com/dotnetCarpenter/combine-img",
+  "bugs": {
+    "url": "https://github.com/dotnetCarpenter/combine-img/issues"
+  }
 }
