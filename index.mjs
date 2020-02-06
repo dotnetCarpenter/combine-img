@@ -9,7 +9,7 @@ import yargs from 'yargs'
 import { execSync } from 'child_process'
 import path from 'path'
 import R from 'ramda'
-import createArray from './createArray.js'
+import createArray from './lib/createArray.js'
 
 const { TYPE, DIR } = parseArguments()
 // console.log(TYPE, DIR)
@@ -92,10 +92,6 @@ function fst (list) {
 
 function escape (path) {
   return path.replace(/[\s\(\)]/g, '\\$&')
-}
-
-function sleep (duration) {
-  setTimeout(()=>{}, duration)
 }
 
 function readDirectory (type, directory) {

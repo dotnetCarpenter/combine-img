@@ -1,2 +1,8 @@
+# editor
 .vscode/
+
+# nodejs dependencies
 node_modules/
+
+# test artifacts
+test/page*.jpg

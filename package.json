@@ -2,7 +2,7 @@
   "name": "combine-img",
   "desciption": "Combine images into pages of 2 images",
   "version": "1.0.0-beta.1",
-  "main": "index.mjs",
+  "bin": "index.mjs",
   "scripts": {
     "start": "node --experimental-modules index.mjs",
     "test": "npm run test:run && npm run test:check && npm run test:cleanup",
