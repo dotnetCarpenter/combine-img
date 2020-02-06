@@ -1,4 +1,4 @@
-# combine-img ![Node.js CI](https://github.com/dotnetCarpenter/combine-img/workflows/Node.js%20CI/badge.svg)
+# combine-img [![Node.js CI](https://github.com/dotnetCarpenter/combine-img/workflows/Node.js%20CI/badge.svg)][1]
 
 Combine images into pages of 2 images
 
@@ -23,3 +23,5 @@ Options:
 _Note: Only meant to be used for a single user. Do not use this as a web service._
 
 License: [GPL-3.0-or-later](https://spdx.org/licenses/GPL-3.0-or-later.html)
+
+[1]: https://github.com/dotnetCarpenter/combine-img/actions?query=workflow%3A%22Node.js+CI%22
