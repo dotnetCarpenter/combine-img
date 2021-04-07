@@ -6,12 +6,13 @@
 //TODO: optimize imagemagic convert to screen size
 
 import yargs from 'yargs'
+import { hideBin } from 'yargs/helpers'
 import { execSync } from 'child_process'
 import path from 'path'
 import R from 'ramda'
 import createArray from './lib/createArray.js'
 
-const { TYPE, DIR } = parseArguments()
+const { TYPE, DIR } = parseArguments(process.argv)
 // console.log(TYPE, DIR)
 
 main()
@@ -63,8 +64,8 @@ function groupPairs (f, c = 0) {
   return list => f(() => ++c % 2 === 1, list)
 }
 
-function parseArguments () {
-  const argv = yargs
+function parseArguments (args) {
+  const argv = yargs(hideBin(args))
     .usage(
 `Usage:
   node --experimental-modules $0 [-t|--type FILE_EXTENSION] PATH
