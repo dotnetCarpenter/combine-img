@@ -5,7 +5,7 @@
   "bin": "index.mjs",
   "scripts": {
     "start": "node --experimental-modules index.mjs",
-    "test": "yarn test:run && yarn test:check; yarn test:cleanup",
+    "test": "yarn test:run && sleep 1s && yarn test:check; yarn test:cleanup",
     "test:run": "node --experimental-modules index.mjs test/",
     "test:check": "sha1sum -c test/sha1sum.txt",
     "test:cleanup": "rm test/page*"
